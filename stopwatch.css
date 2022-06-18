@@ -1,0 +1,75 @@
+.seconds{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 49%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    font-size: 35px;
+}
+.minutes{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 49%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    font-size: 35px;
+}
+.hours{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 49%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    font-size: 35px;
+}
+h1{
+    text-align: center;
+}
+.start{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 48%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    margin-top: 35px;
+}
+.stop{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 48%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    margin-top: 35px;
+}
+.reset{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    /* Move the element to the right by 50% of the container's width */
+    left: 48%; 
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    margin-top: 35px;
+}
