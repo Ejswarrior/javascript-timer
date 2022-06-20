@@ -4,11 +4,11 @@
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 49%; 
+    left: 50%; 
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
-    font-size: 35px;
+    font-size: 50px;
 }
 .minutes{
     text-align: center;
@@ -16,11 +16,11 @@
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 49%; 
+    left: 50%; 
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
-    font-size: 35px;
+    font-size: 50px;
 }
 .hours{
     text-align: center;
@@ -28,11 +28,11 @@
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 49%; 
+    left: 50%; 
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
-    font-size: 35px;
+    font-size: 50px;
 }
 h1{
     text-align: center;
@@ -44,6 +44,8 @@ h1{
     position: relative;
     /* Move the element to the right by 50% of the container's width */
     left: 48%; 
+    height: 50px;
+    width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
@@ -56,6 +58,8 @@ h1{
     position: relative;
     /* Move the element to the right by 50% of the container's width */
     left: 48%; 
+    height: 50px;
+    width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
@@ -68,8 +72,16 @@ h1{
     position: relative;
     /* Move the element to the right by 50% of the container's width */
     left: 48%; 
+    height: 50px;
+    width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
     /* amount across the X-axis to the left */
     transform: translateX(-50%);
     margin-top: 35px;
+}
+body{
+    background-color: blanchedalmond;
+}
+.border{
+    border: 25px;
 }
