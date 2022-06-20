@@ -84,4 +84,5 @@ body{
 }
 .border{
     border: 25px;
+    border-radius: 12.5px;
 }
