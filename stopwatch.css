@@ -43,7 +43,7 @@ h1{
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 36%; 
+    left: 30%; 
     height: 50px;
     width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
@@ -57,7 +57,7 @@ h1{
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 36%; 
+    left: 30%; 
     height: 50px;
     width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
@@ -71,7 +71,7 @@ h1{
     display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 36%; 
+    left: 30%; 
     height: 50px;
     width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 
@@ -95,46 +95,28 @@ body{
     background-color: blanchedalmond;
     position: fixed;
 }
-.countDownMinutes{
-    text-align: center;
-    margin: auto;
-    display: inline-block;
-    position: relative;
-    /* Move the element to the right by 50% of the container's width */
-    left: 42%; 
-    /* Calculates 50% of the element's width, and moves it by that */ 
-    /* amount across the X-axis to the left */
-    transform: translateX(-50%);
-}
-.countDownSeconds{
-    text-align: center;
-    margin: auto;
-    display: inline-block;
-    position: relative;
-    /* Move the element to the right by 50% of the container's width */
-    left: 42%; 
-    /* Calculates 50% of the element's width, and moves it by that */ 
-    /* amount across the X-axis to the left */
-    transform: translateX(-50%);
-}
-.countDownHours{
-    text-align: center;
-    margin: auto;
-    display: inline-block;
-    position: relative;
-    /* Move the element to the right by 50% of the container's width */
-    left: 42%; 
-    /* Calculates 50% of the element's width, and moves it by that */ 
-    /* amount across the X-axis to the left */
-    transform: translateX(-50%);
-}
+
 .countDown{
     text-align: center;
     margin: auto;
     display: inline-block;
+    position: absolute;
+    /* Move the element to the right by 50% of the container's width */
+    left: 12%; 
+    height: 50px;
+    width: 75px;
+    /* Calculates 50% of the element's width, and moves it by that */ 
+    /* amount across the X-axis to the left */
+    transform: translateX(-50%);
+    margin-top: 35px;
+}
+.down{
+    text-align: center;
+    margin: auto;
+    display: inline-block;
     position: relative;
     /* Move the element to the right by 50% of the container's width */
-    left: 36%; 
+    left: 30%; 
     height: 50px;
     width: 75px;
     /* Calculates 50% of the element's width, and moves it by that */ 

@@ -18,20 +18,22 @@ function stopInterval() {
 }
 
 function timerDown(){
-
+    document.querySelector('.seconds').textContent = second;
+    document.querySelector('.minutes').textContent = minute + ':';
+    document.querySelector('.hours').textContent = hour +':';
+    console.log(second);
+    second = second - 1 ;
    
-   second = second - 1 ;
-   document.querySelector('.seconds').textContent = second;
 
-    if(second == 0){
+    if(second == 0 && second == 0){
         second = 60
-        minute = minute + 1;
+        minute = minute - 1;
         document.querySelector('.minutes').textContent = minute + ":";
     
     }
     else if(minute == 0){
         minute = 60
-        hour = hour + 1;
+        hour = hour - 1;
         document.querySelector('.hours').textContent = hour + ':';
     
     }
@@ -89,6 +91,6 @@ hour = document.querySelector('.countDownHours').value;
 })
 
 document.querySelector('.countDown').addEventListener('click', function(){
-    interDown = setInveral(timerDown, 1000);
+    interDown = setInterval(timerDown, 1000);
     timerDown();
 })

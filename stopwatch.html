@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="stopwatch.css"/>
 </head>
 <body>
+    <label for="countDownHours">Enter in time</label>
+    <input type="text" class="countDownHours" name="fname">
+    <label for="countDownMinutes">Enter in time</label>
+    <input type="text" class="countDownMinutes" name="fname">
+    <label for="countDownSeconds">Enter in time</label>
+    <input type="text" class="countDownSeconds" name="fname">
     <div class="border">
     <h1> Stopwatch timer </h1>
 
@@ -15,22 +21,18 @@
     <P class='minutes'>00:</P>
     <P class='seconds'>00</P>
 
-    <label for="countDownHours">Enter in time</label>
-    <input type="text" class="countDownHours" name="fname">
-    <label for="countDownMinutes">Enter in time</label>
-    <input type="text" class="countDownMinutes" name="fname">
-    <label for="countDownSeconds">Enter in time</label>
-    <input type="text" class="countDownSeconds" name="fname">
+    
 
 <div class="btn">
     <button class="start" type="button">Count up</button>
     <button class="stop" onclick="stopInterval()" type="button">Stop</button>
     <button class="reset" type="button">Reset</button>
     <button class="down" type="button">Add timer</button>
+    <button class="countDown" type="button">Count down</button>
     
 </div>
 </div>
-<button class="countDown" type="button">Count down</button>
+
 <script src="stopwatch.js"></script>
 </body>
 </html>
