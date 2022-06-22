@@ -11,6 +11,21 @@ console.log(time);
 let inter;
 let interDown;
 
+let clock = document.createElement("p");
+let node = document.createTextNode(time);
+clock.appendChild(node);
+clock.className ="clock";
+document.querySelector('.border').appendChild(clock);
+clockInter = setInterval(myClock, 1000);
+
+function myClock(){
+    const d = new Date();
+
+let h = d.getHours();
+let m = d.getMinutes();
+let s = d.getSeconds();
+document.querySelector('.clock').innerHTML = d.toLocaleTimeString();
+}
 
 
 function stopInterval() {
@@ -27,13 +42,14 @@ function timerDown(){
    
 
     if(second == 0){
-        second = 60
+        second += 60
+        if(minute>=0){
         minute = minute - 1;
         document.querySelector('.minutes').textContent = minute + ":";
-    
+        }
     }
-    else if(minute == 0 && second == 0){
-        minute = 60
+    else if(minute == 0){
+        minute += 60
         hour = hour - 1;
         document.querySelector('.hours').textContent = hour + ':';
     
@@ -67,7 +83,7 @@ function mytimer(){
         
     }
 
- 
+ myClock();
 document.querySelector('.start').addEventListener('click', function(){
 inter = setInterval(mytimer, 1000);
 mytimer();
