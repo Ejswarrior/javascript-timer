@@ -15,6 +15,7 @@ let interDown;
 
 function stopInterval() {
     clearInterval(inter);
+    clearInterval(interDown);
 }
 
 function timerDown(){
@@ -25,17 +26,23 @@ function timerDown(){
     second = second - 1 ;
    
 
-    if(second == 0 && second == 0){
+    if(second == 0){
         second = 60
         minute = minute - 1;
         document.querySelector('.minutes').textContent = minute + ":";
     
     }
-    else if(minute == 0){
+    else if(minute == 0 && second == 0){
         minute = 60
         hour = hour - 1;
         document.querySelector('.hours').textContent = hour + ':';
     
+    }
+    if(minute<10){
+        document.querySelector('.minutes').textContent = '0' + minute + ":";
+    }
+    if(hour<10){
+        document.querySelector('.hours').textContent = '0' + hour + ":";
     }
     
 }
@@ -78,6 +85,12 @@ document.querySelector('.hours').textContent = hour +':';
 })
 
 document.querySelector('.down').addEventListener('click', function(){
+    if(minute<10){
+        document.querySelector('.minutes').textContent = '0' + minute + ":";
+    }
+    if(hour<10){
+        document.querySelector('.hours').textContent = '0' + hour + ":";
+    }
     second = document.querySelector('.countDownSeconds').value;
 minute = document.querySelector('.countDownMinutes').value;
 hour = document.querySelector('.countDownHours').value;
@@ -85,7 +98,12 @@ hour = document.querySelector('.countDownHours').value;
     document.querySelector('.hours').textContent = hour + ':';
     document.querySelector('.minutes').textContent = minute + ':';
     document.querySelector('.seconds').textContent = second;
-    
+    if(minute<10){
+        document.querySelector('.minutes').textContent = '0' + minute + ":";
+    }
+    if(hour<10){
+        document.querySelector('.hours').textContent = '0' + hour + ":";
+    }
 
   
 })
